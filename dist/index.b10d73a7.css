@@ -1,0 +1,579 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  letter-spacing: .05rem;
+  background-color: #f4f4f4;
+  font-family: Lora, serif;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.headline {
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media (min-width: 525px) {
+  .headline {
+    font-size: 2.5rem;
+  }
+}
+
+.container {
+  width: min(90%, 90rem);
+  margin-inline: auto;
+}
+
+.container--large {
+  max-width: 100rem;
+}
+
+.bg-dark {
+  background-color: #2c201a;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hr {
+  width: 200px;
+  height: 1px;
+  background-color: #daa520;
+  margin: 2rem auto;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+.mt-1 {
+  margin-top: 2rem;
+}
+
+.mt-2 {
+  margin-top: 4rem;
+}
+
+.mt-3 {
+  margin-top: 6rem;
+}
+
+.mt-4 {
+  margin-top: 8rem;
+}
+
+.mb-1 {
+  margin-bottom: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 4rem;
+}
+
+.mb-3 {
+  margin-bottom: 6rem;
+}
+
+.mb-4 {
+  margin-bottom: 8rem;
+}
+
+.p-1 {
+  padding: 2rem;
+}
+
+.p-2 {
+  padding: 4rem;
+}
+
+.p-3 {
+  padding: 6rem;
+}
+
+.p-4 {
+  padding: 8rem;
+}
+
+.py-1 {
+  padding: 2rem 0;
+}
+
+.py-2 {
+  padding: 4rem 0;
+}
+
+.py-3 {
+  padding: 6rem 0;
+}
+
+.py-4 {
+  padding: 8rem 0;
+}
+
+.pt-1 {
+  padding-top: 2rem;
+}
+
+.pt-2 {
+  padding-top: 4rem;
+}
+
+.pt-3 {
+  padding-top: 6rem;
+}
+
+.pt-4 {
+  padding-top: 8rem;
+}
+
+.header {
+  justify-content: space-between;
+  display: flex;
+}
+
+.header__title {
+  color: #fff;
+  letter-spacing: .1rem;
+  font-family: Parisienne, cursive;
+  font-size: 1.2rem;
+  display: none;
+}
+
+@media (min-width: 525px) {
+  .header__title {
+    font-size: 1.75rem;
+    display: block;
+  }
+}
+
+.header__nav {
+  margin-inline: auto;
+}
+
+@media (min-width: 525px) {
+  .header__nav {
+    margin-inline: initial;
+  }
+}
+
+.header__nav-menu {
+  display: flex;
+}
+
+.header__nav-menu li {
+  padding-right: 1rem;
+}
+
+.header__nav-menu li a {
+  color: #fff;
+  letter-spacing: .1rem;
+  border-bottom: 1px solid #0000;
+}
+
+.header__nav-menu li a:hover {
+  border-color: #daa520;
+}
+
+.hero {
+  min-height: 250px;
+  background-color: #0000;
+  background-image: linear-gradient(#0003, #0003), url("hero.22dc911d.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+  padding: 1rem 0;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    min-height: 350px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .hero {
+    height: 100vh;
+  }
+}
+
+.hero__text-container {
+  padding: 0 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .hero__text-container {
+    padding: 0 5rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .hero__text-container {
+    padding: 0 15rem;
+  }
+}
+
+.hero__text {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .hero__text {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .hero__text {
+    margin-bottom: 5rem;
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+}
+
+.hero__btn {
+  cursor: pointer;
+  color: #fff;
+  letter-spacing: .05rem;
+  background-color: #2c201a;
+  border: 1px solid #daa520;
+  margin-inline: auto;
+  padding: .5rem 1.5rem;
+  font-family: Lora, serif;
+  font-size: 1rem;
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .hero__btn {
+    padding: 1.25rem 2.75rem;
+  }
+}
+
+.regions__text {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+
+@media (min-width: 525px) {
+  .regions__text {
+    font-size: 1.75rem;
+  }
+}
+
+.regions__cards {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4rem;
+  display: flex;
+}
+
+.regions__card {
+  min-width: 250px;
+  max-width: 16.66%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.regions__img, .regions__img-overlay {
+  height: 250px;
+  filter: brightness(75%);
+  color: #fff;
+  background-size: cover;
+}
+
+.regions__img-overlay {
+  display: none;
+}
+
+.regions__name {
+  color: #fff;
+  font-size: 3rem;
+  position: absolute;
+}
+
+.menu {
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 5rem;
+  display: flex;
+}
+
+.menu__left {
+  width: 40%;
+  display: none;
+}
+
+@media (min-width: 1023px) {
+  .menu__left {
+    display: block;
+  }
+}
+
+.menu__right {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  display: flex;
+  position: relative;
+}
+
+.menu__right-category {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu__right-dish-name {
+  margin-bottom: .75rem;
+  font-weight: bold;
+}
+
+.menu__right-dish-description {
+  color: #555;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.menu__page {
+  width: 600px;
+}
+
+.menu .prev, .menu .next {
+  cursor: pointer;
+  width: auto;
+  color: #888;
+  -webkit-user-select: none;
+  user-select: none;
+  border-radius: 0 3px 3px 0;
+  margin-top: -30px;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+}
+
+.menu .next {
+  border-radius: 3px 0 0 3px;
+  position: absolute;
+  right: 0;
+}
+
+@media (min-width: 1280px) {
+  .menu .next {
+    right: 6rem;
+  }
+}
+
+.menu .prev {
+  border-radius: 3px 0 0 3px;
+  position: absolute;
+  left: 0;
+}
+
+@media (min-width: 1280px) {
+  .menu .prev {
+    left: 6rem;
+  }
+}
+
+.reviews {
+  color: #d3d3d3;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+  display: flex;
+}
+
+@media (min-width: 1024px) {
+  .reviews {
+    flex-direction: row;
+  }
+}
+
+.reviews blockquote {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .reviews blockquote {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+.reviews figcaption {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+@media (min-width: 1024px) {
+  .reviews figcaption {
+    font-size: 1.25rem;
+  }
+}
+
+.contact {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.contact__infos {
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .contact__infos {
+    width: 40%;
+    margin-top: 4rem;
+  }
+}
+
+.contact__map {
+  width: 100%;
+  height: 400px;
+  margin-inline: auto;
+  margin-top: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .contact__map {
+    width: 60%;
+    height: 800px;
+  }
+}
+
+.contact__infos-title {
+  margin-bottom: 1.25rem;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.contact__infos-text {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .contact__infos-text {
+    margin-bottom: 6rem;
+  }
+}
+
+.contact__infos-text a {
+  text-decoration: underline;
+}
+
+.modal-booking {
+  height: 100vh;
+  background-color: #0006;
+  justify-content: center;
+  align-items: center;
+  margin-top: -16px;
+  font-family: arial;
+  display: none;
+}
+
+.modal-booking__form {
+  max-width: 960px;
+  background-color: #f9f9f9;
+  border: 2px solid #daa520;
+  border-radius: 5px;
+  padding: 2rem;
+  position: relative;
+}
+
+.modal-booking__form-group {
+  margin-top: 20px;
+}
+
+.modal-booking__form-group label {
+  color: #333;
+  font-family: Parisienne, cursive;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.modal-booking__form-group input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #daa520;
+}
+
+.modal-booking__form-group input:focus {
+  border: 2.5px solid #daa520;
+  outline: none;
+}
+
+.modal-booking__close {
+  cursor: pointer;
+  color: #dc3545;
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  top: .25rem;
+  right: .5rem;
+}
+
+.modal-booking__btn {
+  cursor: pointer;
+  margin-top: 2rem;
+  color: #fff;
+  letter-spacing: .05rem;
+  background-color: #2c201a;
+  border: 1px solid #daa520;
+  margin-inline: auto;
+  padding: .5rem 1.5rem;
+  font-family: Lora, serif;
+  font-size: 1rem;
+  display: block;
+}
+
+/*# sourceMappingURL=index.b10d73a7.css.map */

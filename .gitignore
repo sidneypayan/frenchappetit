@@ -2,6 +2,3 @@
 .parcel-cache
 .vscode
 node_modules
-package.json
-package-lock.json
-dist
