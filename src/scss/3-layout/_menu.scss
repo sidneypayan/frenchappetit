@@ -1,0 +1,83 @@
+.menu {
+	display: flex;
+	margin-top: 5rem;
+	justify-content: space-between;
+	align-items: center;
+	gap: 4rem;
+
+	&__left {
+		width: 40%;
+		display: none;
+
+		@media (min-width: 1023px) {
+			display: block;
+		}
+	}
+
+	&__right {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		position: relative;
+		text-align: center;
+		margin-inline: auto;
+
+		&-category {
+			font-size: 1.5rem;
+			font-weight: bold;
+			margin-bottom: 1.5rem;
+		}
+
+		&-dish-name {
+			font-weight: bold;
+			margin-bottom: 0.75rem;
+		}
+
+		&-dish-description {
+			font-style: italic;
+			margin-bottom: 1.5rem;
+			color: #555;
+		}
+	}
+
+	&__page {
+		width: 600px;
+	}
+
+	.prev,
+	.next {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		margin-top: -30px;
+		padding: 16px;
+		color: #888;
+		font-weight: bold;
+		font-size: 20px;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+		position: absolute;
+		right: 0;
+		border-radius: 3px 0 0 3px;
+
+		@media (min-width: 1280px) {
+			right: 6rem;
+		}
+	}
+
+	.prev {
+		position: absolute;
+		left: 0;
+		border-radius: 3px 0 0 3px;
+
+		@media (min-width: 1280px) {
+			left: 6rem;
+		}
+	}
+}

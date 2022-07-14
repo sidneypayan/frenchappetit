@@ -1,0 +1,51 @@
+.regions {
+  &__text {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+
+    @media(min-width: 525px) {
+      font-size: 1.75rem;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    justify-content: center;
+  }
+
+  &__card {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    max-width: 16.66%;
+    // margin-right: auto;
+    // margin-left: auto;
+    // justify-self: center;
+    // flex-direction: column;
+  }
+
+  &__img,
+  &__img-overlay {
+    height: 250px;
+    // width: 100%;
+    // min-width: 20em;
+    background-size: cover;
+    filter: brightness(75%);
+    color: #fff;
+  }
+
+  &__img-overlay {
+    display: none;
+  }
+
+  &__name {
+    position: absolute;
+    font-size: 3rem;
+    color: #fff;
+  }
+}

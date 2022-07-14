@@ -1,0 +1,31 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+  color: #D3D3D3;
+
+  @media(min-width: 1024px) {
+    flex-direction: row;
+  }
+
+  blockquote {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+
+    @media(min-width: 1024px) {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  figcaption {
+    font-size: 1rem;
+    font-style: italic;
+
+    @media(min-width: 1024px) {
+      font-size: 1.25rem;
+    }
+  }
+}

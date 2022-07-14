@@ -1,0 +1,44 @@
+.header {
+  // padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    display: none;
+    font-family: 'Parisienne', cursive;
+    color: #fff;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+
+    @media(min-width: 525px) {
+      display: block;
+      font-size: 1.75rem;
+    }
+  }
+
+  &__nav {
+    margin-inline: auto;
+
+    @media(min-width: 525px) {
+      margin-inline: initial;
+    }
+  }
+
+  &__nav-menu {
+    display: flex;
+
+    li {
+      padding-right: 1rem;
+
+      a {
+        color: #fff;
+        letter-spacing: .1rem;
+        border-bottom: 1px transparent solid;
+
+        &:hover {
+          border-color: $gold-color;
+        }
+      }
+    }
+  }
+}

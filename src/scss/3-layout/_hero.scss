@@ -1,0 +1,71 @@
+.hero {
+	position: relative;
+	min-height: 250px;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		url('../images/hero.jpg');
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 1rem 0;
+
+	@media (min-width: 768px) {
+		min-height: 350px;
+	}
+
+	@media (min-width: 1600px) {
+		height: 100vh;
+	}
+
+	&__text-container {
+		padding: 0 2.5rem;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+
+		@media (min-width: 768px) {
+			padding: 0 5rem;
+		}
+
+		@media (min-width: 1600px) {
+			padding: 0 15rem;
+		}
+	}
+
+	&__text {
+		font-weight: normal;
+		color: #fff;
+		margin-bottom: 2rem;
+		font-size: 1.2rem;
+		line-height: 1.5rem;
+
+		@media (min-width: 768px) {
+			font-size: 2.5rem;
+			line-height: 2.5rem;
+		}
+
+		@media (min-width: 1600px) {
+			font-size: 4rem;
+			line-height: 4.5rem;
+			margin-bottom: 5rem;
+		}
+	}
+
+	&__btn {
+		cursor: pointer;
+		background-color: $dark-color;
+		display: block;
+		padding: 0.5rem 1.5rem;
+		margin-inline: auto;
+		border: none;
+		border: $gold-color solid 1px;
+		font-family: 'Lora', serif;
+		font-size: 1rem;
+		color: #fff;
+		letter-spacing: 0.05rem;
+
+		@media (min-width: 1024px) {
+			padding: 1.25rem 2.75rem;
+		}
+	}
+}

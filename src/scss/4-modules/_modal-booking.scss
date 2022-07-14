@@ -1,0 +1,67 @@
+.modal-booking {
+	margin-top: -16px;
+	font-family: arial;
+	height: 100vh;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.4);
+
+	&__form {
+		position: relative;
+		background-color: #f9f9f9;
+		max-width: 960px;
+		padding: 2rem;
+		border-radius: 5px;
+		border: $gold-color solid 2px;
+	}
+
+	&__form-group {
+		margin-top: 20px;
+
+		label {
+			color: #333;
+			font-weight: 500;
+			font-family: 'Parisienne', cursive;
+			font-size: 1.5rem;
+		}
+
+		input {
+			width: 100%;
+			height: 45px;
+			border: none;
+			border: $gold-color solid 1px;
+			// padding: 0.5rem;
+		}
+
+		input:focus {
+			outline: none;
+			border: $gold-color solid 2.5px;
+		}
+	}
+
+	&__close {
+		cursor: pointer;
+		position: absolute;
+		top: 0.25rem;
+		right: 0.5rem;
+		color: #dc3545;
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
+	&__btn {
+		margin-top: 2rem;
+		cursor: pointer;
+		background-color: $dark-color;
+		display: block;
+		padding: 0.5rem 1.5rem;
+		margin-inline: auto;
+		border: none;
+		border: $gold-color solid 1px;
+		font-family: 'Lora', serif;
+		font-size: 1rem;
+		color: #fff;
+		letter-spacing: 0.05rem;
+	}
+}
